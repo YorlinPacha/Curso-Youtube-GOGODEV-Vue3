@@ -2,7 +2,9 @@
   <h1>Componente List padre</h1>  
   <div class="container">
     <!-- // recorrido con for y envio de datos con props -->
-    <PostDetail v-for="elm in info" :key="elm.title" :title="elm.title" :content="elm.content"/>
+    <!-- al final pasamos el evento que cuando se llame realiza la funcion -->
+    <!--3) el padre escucha el evento sayHi y se ejecuta la funcion showAlert-->
+    <PostDetail v-for="elm in info" :key="elm.title" :title="elm.title" :content="elm.content" @sayHi="showAlert"/>
 </div>
 </template>
 
@@ -32,6 +34,16 @@ let info = [
         title:" Este post 5",
         content:"Texto de ejemplo5"
     }]
+
+    //Implementando los emits para que el hijo notifique
+    //al padre que haga esta funcion
+    //msg:string pos typescript, si no solo msg
+
+    //4 muestra la funcion
+function showAlert(msg:string){
+    alert(msg)
+}
+
 </script>
 
 <style scoped>
