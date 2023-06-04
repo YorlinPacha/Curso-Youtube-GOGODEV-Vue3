@@ -9,7 +9,7 @@
     </div>  
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import { defineProps, defineEmits, ref } from 'vue';
 //definimos las props
 const props = defineProps({

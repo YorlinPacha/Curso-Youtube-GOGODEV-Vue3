@@ -28,6 +28,13 @@
   <hr>
   <h2>Post para Pros y emit</h2>
   <PostList />
+  <hr>
+  <h2>Ejemplo Datos computados</h2>
+  <ComputedExample />
+  <hr>
+  <h2>Ejercicio computados</h2>
+  <ComputedExampleEjercicio />
+  <hr>
 </template>
 
 <script lang="ts" setup>
@@ -41,7 +48,8 @@ import ModelForm from './components/ModelForm.vue';
 import CycleOption from './components/CycleOption.vue';
 import CycleCompositionApi from './components/CycleCompositionApi.vue';
 import PostList from './components/PostList.vue'
-
+import ComputedExample from './components/ComputedExample.vue';
+import ComputedExampleEjercicio from './components/ComputedExampleEjercicio.vue';
 </script>
 
 <style scoped>
